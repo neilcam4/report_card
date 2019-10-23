@@ -3,6 +3,7 @@ function checkResult(string){
     let countAmber = 0
     let countGreen = 0
     let countRed = 0
+    let countOther = 0
     newArray.forEach(function(item){
         if (item === 'Red'){
             countRed++
@@ -10,10 +11,12 @@ function checkResult(string){
             countGreen ++
         } else if (item === 'Amber'){
            countAmber++
+        } else {
+            countOther++
         }
 
     })
-    return `Red: ${countRed} Green: ${countGreen} Amber: ${countAmber}`
+    return `Red: ${countRed} Green: ${countGreen} Amber: ${countAmber} Other: ${countOther}`
     
     
 }
